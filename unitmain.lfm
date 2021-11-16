@@ -1,0 +1,722 @@
+object FormDUESK: TFormDUESK
+  Left = 440
+  Height = 828
+  Top = 407
+  Width = 700
+  Caption = 'DUESK'
+  ClientHeight = 809
+  ClientWidth = 700
+  Menu = MainMenu1
+  OnActivate = FormActivate
+  LCLVersion = '1.6.4.0'
+  object PageControlDuesk: TPageControl
+    Left = 8
+    Height = 816
+    Top = 8
+    Width = 680
+    ActivePage = TabSheetFE
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheetSE: TTabSheet
+      Caption = '&Selbsteinschätzung'
+      ClientHeight = 790
+      ClientWidth = 672
+      object StringGridSE: TStringGrid
+        Left = 8
+        Height = 747
+        Top = 8
+        Width = 552
+        ColCount = 6
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 37
+        TabOrder = 0
+        OnSelectCell = StringGridSESelectCell
+        ColWidths = (
+          26
+          166
+          93
+          90
+          88
+          81
+        )
+        Cells = (
+          41
+          0
+          1
+          '1'
+          0
+          2
+          '2'
+          0
+          3
+          '3'
+          0
+          4
+          '4'
+          0
+          5
+          '5'
+          0
+          6
+          '6'
+          0
+          7
+          '7'
+          0
+          8
+          '8'
+          0
+          9
+          '9'
+          0
+          10
+          '10'
+          0
+          11
+          '11'
+          0
+          12
+          '12'
+          0
+          13
+          '13'
+          0
+          14
+          '14'
+          0
+          15
+          '15'
+          0
+          16
+          '16'
+          0
+          17
+          '17'
+          0
+          18
+          '18'
+          0
+          19
+          '19'
+          0
+          20
+          '20'
+          0
+          21
+          '21'
+          0
+          22
+          '22'
+          0
+          23
+          '23'
+          0
+          24
+          '24'
+          0
+          25
+          '25'
+          0
+          26
+          '26'
+          0
+          27
+          '27'
+          0
+          28
+          '28'
+          0
+          29
+          '29'
+          0
+          30
+          '30'
+          0
+          31
+          '31'
+          0
+          32
+          '32'
+          0
+          33
+          '33'
+          0
+          34
+          '34'
+          0
+          35
+          '35'
+          0
+          36
+          '36'
+          1
+          0
+          'Item'
+          2
+          0
+          'Trifft voll zu'
+          3
+          0
+          'Trifft zu'
+          4
+          0
+          'Trifft teilweise zu'
+          5
+          0
+          'Trifft nicht zu'
+        )
+      end
+    end
+    object TabSheetFE: TTabSheet
+      Caption = '&Fremdeinschätrzung'
+      ClientHeight = 790
+      ClientWidth = 672
+      object StringGridFE: TStringGrid
+        Left = 8
+        Height = 747
+        Top = 8
+        Width = 552
+        ColCount = 6
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 37
+        TabOrder = 0
+        OnSelectCell = StringGridFESelectCell
+        ColWidths = (
+          26
+          166
+          93
+          90
+          88
+          81
+        )
+        Cells = (
+          41
+          0
+          1
+          '1'
+          0
+          2
+          '2'
+          0
+          3
+          '3'
+          0
+          4
+          '4'
+          0
+          5
+          '5'
+          0
+          6
+          '6'
+          0
+          7
+          '7'
+          0
+          8
+          '8'
+          0
+          9
+          '9'
+          0
+          10
+          '10'
+          0
+          11
+          '11'
+          0
+          12
+          '12'
+          0
+          13
+          '13'
+          0
+          14
+          '14'
+          0
+          15
+          '15'
+          0
+          16
+          '16'
+          0
+          17
+          '17'
+          0
+          18
+          '18'
+          0
+          19
+          '19'
+          0
+          20
+          '20'
+          0
+          21
+          '21'
+          0
+          22
+          '22'
+          0
+          23
+          '23'
+          0
+          24
+          '24'
+          0
+          25
+          '25'
+          0
+          26
+          '26'
+          0
+          27
+          '27'
+          0
+          28
+          '28'
+          0
+          29
+          '29'
+          0
+          30
+          '30'
+          0
+          31
+          '31'
+          0
+          32
+          '32'
+          0
+          33
+          '33'
+          0
+          34
+          '34'
+          0
+          35
+          '35'
+          0
+          36
+          '36'
+          1
+          0
+          'Item'
+          2
+          0
+          'Trifft voll zu'
+          3
+          0
+          'Trifft zu'
+          4
+          0
+          'Trifft teilweise zu'
+          5
+          0
+          'Trifft nicht zu'
+        )
+      end
+    end
+    object TabSheetProfil: TTabSheet
+      Caption = '&Profil'
+      ClientHeight = 790
+      ClientWidth = 672
+      OnEnter = TabSheetProfilEnter
+      object StringGridPSE: TStringGrid
+        Left = 29
+        Height = 153
+        Top = 47
+        Width = 267
+        ColCount = 6
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 7
+        TabOrder = 0
+        ColWidths = (
+          140
+          23
+          23
+          23
+          22
+          22
+        )
+        Cells = (
+          5
+          1
+          0
+          '1'
+          2
+          0
+          '2'
+          3
+          0
+          '3'
+          4
+          0
+          '4'
+          5
+          0
+          '5'
+        )
+      end
+      object StringGridPFE: TStringGrid
+        Left = 29
+        Height = 153
+        Top = 264
+        Width = 267
+        ColCount = 6
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 7
+        TabOrder = 1
+        ColWidths = (
+          140
+          23
+          23
+          23
+          22
+          22
+        )
+        Cells = (
+          5
+          1
+          0
+          '1'
+          2
+          0
+          '2'
+          3
+          0
+          '3'
+          4
+          0
+          '4'
+          5
+          0
+          '5'
+        )
+      end
+      object Button1: TButton
+        Left = 32
+        Height = 25
+        Top = 12
+        Width = 264
+        Caption = 'Pr&ofil berechnen'
+        OnClick = TabSheetProfilEnter
+        TabOrder = 2
+      end
+      object StringGridPSEFE: TStringGrid
+        Left = 312
+        Height = 748
+        Top = 12
+        Width = 264
+        ColCount = 4
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 37
+        TabOrder = 3
+        ColWidths = (
+          24
+          183
+          23
+          22
+        )
+        Cells = (
+          39
+          0
+          1
+          '1'
+          0
+          2
+          '2'
+          0
+          3
+          '3'
+          0
+          4
+          '4'
+          0
+          5
+          '5'
+          0
+          6
+          '6'
+          0
+          7
+          '7'
+          0
+          8
+          '8'
+          0
+          9
+          '9'
+          0
+          10
+          '10'
+          0
+          11
+          '11'
+          0
+          12
+          '12'
+          0
+          13
+          '13'
+          0
+          14
+          '14'
+          0
+          15
+          '15'
+          0
+          16
+          '16'
+          0
+          17
+          '17'
+          0
+          18
+          '18'
+          0
+          19
+          '19'
+          0
+          20
+          '20'
+          0
+          21
+          '21'
+          0
+          22
+          '22'
+          0
+          23
+          '23'
+          0
+          24
+          '24'
+          0
+          25
+          '25'
+          0
+          26
+          '26'
+          0
+          27
+          '27'
+          0
+          28
+          '28'
+          0
+          29
+          '29'
+          0
+          30
+          '30'
+          0
+          31
+          '31'
+          0
+          32
+          '32'
+          0
+          33
+          '33'
+          0
+          34
+          '34'
+          0
+          35
+          '35'
+          0
+          36
+          '36'
+          1
+          0
+          'Item'
+          2
+          0
+          'SE'
+          3
+          0
+          'FE'
+        )
+      end
+      object KorrelationLabel: TLabel
+        Left = 32
+        Height = 13
+        Top = 434
+        Width = 53
+        Caption = 'Korrelation:'
+        ParentColor = False
+      end
+      object Korrelation: TEdit
+        Left = 264
+        Height = 21
+        Top = 434
+        Width = 32
+        TabOrder = 4
+        Text = '0.0'
+      end
+      object Label1: TLabel
+        Left = 32
+        Height = 13
+        Top = 472
+        Width = 184
+        Caption = 'Uebereinstimmung SE FE in Prozent %:'
+        ParentColor = False
+      end
+      object UebereinstimmungSEFE: TEdit
+        Left = 264
+        Height = 21
+        Top = 464
+        Width = 32
+        TabOrder = 5
+        Text = '0'
+      end
+    end
+    object TabSheetNorm: TTabSheet
+      Caption = '&Normtabelle'
+      ClientHeight = 790
+      ClientWidth = 672
+      object StringGridNFE: TStringGrid
+        Left = 29
+        Height = 153
+        Top = 264
+        Width = 403
+        ColCount = 8
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 7
+        TabOrder = 0
+        ColWidths = (
+          140
+          34
+          40
+          34
+          34
+          34
+          37
+          42
+        )
+        Cells = (
+          7
+          1
+          0
+          '1'
+          2
+          0
+          '2'
+          3
+          0
+          '3'
+          4
+          0
+          '4'
+          5
+          0
+          '5'
+          6
+          0
+          'Mit.'
+          7
+          0
+          'Stw.'
+        )
+      end
+      object StringGridNSE: TStringGrid
+        Left = 29
+        Height = 153
+        Top = 47
+        Width = 403
+        ColCount = 8
+        FixedCols = 0
+        FixedRows = 0
+        RowCount = 7
+        TabOrder = 1
+        ColWidths = (
+          140
+          34
+          33
+          34
+          38
+          39
+          37
+          38
+        )
+        Cells = (
+          7
+          1
+          0
+          '1'
+          2
+          0
+          '2'
+          3
+          0
+          '3'
+          4
+          0
+          '4'
+          5
+          0
+          '5'
+          6
+          0
+          'Mit.'
+          7
+          0
+          'Stw.'
+        )
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 344
+    object Profil: TMenuItem
+      Caption = 'P&rofil'
+      object Neu: TMenuItem
+        Caption = 'N&eues Profil'
+        OnClick = NeuClick
+      end
+      object Profiloeffnen: TMenuItem
+        Caption = 'Profil &öffnen'
+        OnClick = ProfiloeffnenClick
+      end
+      object Profilspeichern: TMenuItem
+        Caption = 'Profil &Speichern'
+        OnClick = ProfilspeichernClick
+      end
+    end
+    object Normtabelle: TMenuItem
+      Caption = 'N&ormtabelle'
+      object Normtabelleeinlesen: TMenuItem
+        Caption = 'Norm&tabelle lesen'
+        OnClick = NormtabelleeinlesenClick
+      end
+    end
+    object Sprache: TMenuItem
+      Caption = 'S&prache'
+      object ItemDeutsch: TMenuItem
+        Caption = 'Ite&m Deutsch'
+        OnClick = ItemDeutschClick
+      end
+      object ProfilDeutsch: TMenuItem
+        Caption = 'Pro&fil Deutsch'
+        OnClick = ProfilDeutschClick
+      end
+    end
+    object Info: TMenuItem
+      Caption = '&Info'
+      OnClick = InfoClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 384
+  end
+  object SaveDialog1: TSaveDialog
+    left = 424
+  end
+end
